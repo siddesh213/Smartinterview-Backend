@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {"id": 1, "question": "What is a database?", "answer": "Organized collection of structured data stored and managed systematically for easy retrieval and manipulation."},
+    {"id": 2, "question": "Difference between SQL and NoSQL?", "answer": "SQL is relational (structured, ACID compliant), NoSQL is non-relational (flexible schema, BASE model, horizontal scalability)."},
+    {"id": 3, "question": "What is normalization?", "answer": "Process of organizing database to minimize redundancy and improve data integrity by breaking down data into related tables."},
+    {"id": 4, "question": "Explain ACID properties", "answer": "Atomicity (all or nothing), Consistency (valid state), Isolation (independent transactions), Durability (permanent after commit)."},
+    {"id": 5, "question": "What is indexing?", "answer": "Data structure (B-tree, Hash) to speed up query execution and data retrieval from large tables."},
+    {"id": 6, "question": "What is a primary key?", "answer": "Unique identifier for each record in a table, enforces entity integrity and ensures uniqueness."},
+    {"id": 7, "question": "Explain JOIN operations", "answer": "Combines rows from multiple tables: INNER JOIN (matching records), LEFT JOIN (all left + matching), RIGHT JOIN (all right + matching), FULL JOIN (all records)."},
+    {"id": 8, "question": "What is a transaction?", "answer": "Sequence of database operations treated as a single unit, follows ACID properties for data consistency."},
+    {"id": 9, "question": "What is a view?", "answer": "Virtual table derived from base tables, provides subset of data, improves security and simplifies complex queries."},
+    {"id": 10, "question": "Difference between clustered and non-clustered index?", "answer": "Clustered defines physical order of table (one per table), non-clustered creates separate structure (multiple per table)."},
+    {"id": 11, "question": "What is a foreign key?", "answer": "Column(s) that reference primary key of another table, maintains referential integrity and enforces relationships."},
+    {"id": 12, "question": "Explain 1NF, 2NF, 3NF normalization forms", "answer": "1NF: Atomic values only. 2NF: 1NF + no partial dependencies. 3NF: 2NF + no transitive dependencies."},
+    {"id": 13, "question": "What is denormalization?", "answer": "Intentional introduction of redundancy to improve query performance by reducing joins needed."},
+    {"id": 14, "question": "Explain query optimization", "answer": "Process of choosing most efficient execution plan using indexes, query hints, and statistics analysis."},
+    {"id": 15, "question": "What is database sharding?", "answer": "Horizontal partitioning technique to distribute data across multiple servers for scalability and performance."},
+    {"id": 16, "question": "Explain UNION vs UNION ALL", "answer": "UNION removes duplicates and sorts results, UNION ALL keeps duplicates and is faster."},
+    {"id": 17, "question": "What is a stored procedure?", "answer": "Precompiled SQL code stored in database, improves performance, security, and code reusability."},
+    {"id": 18, "question": "Explain deadlock in databases", "answer": "Situation where two transactions wait for each other indefinitely, prevented through timeout, ordering, or resource allocation."},
+    {"id": 19, "question": "What is database replication?", "answer": "Process of copying data from one database to another for redundancy, load distribution, and disaster recovery."},
+    {"id": 20, "question": "Explain B-Tree indexing", "answer": "Self-balancing tree structure for efficient searching, insertion, deletion in O(log n) time with sorted data."},
+    {"id": 21, "question": "What is CAP theorem?", "answer": "Cannot simultaneously guarantee Consistency, Availability, Partition tolerance; choose any two in distributed systems."},
+    {"id": 22, "question": "Difference between Clustered and Distributed databases", "answer": "Clustered: multiple nodes act as one, Distributed: independent databases coordinating via network."},
+    {"id": 23, "question": "Explain cursor in SQL", "answer": "Database object to retrieve query results row by row, used for iterative processing."},
+    {"id": 24, "question": "What is database trigger?", "answer": "Special code automatically executed in response to specific events (INSERT, UPDATE, DELETE) on particular table."},
+    {"id": 25, "question": "Explain MVCC (Multi-Version Concurrency Control)", "answer": "Technique allowing readers and writers to proceed concurrently by maintaining multiple versions of data."}
+  ]
+}

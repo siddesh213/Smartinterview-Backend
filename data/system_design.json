@@ -1,0 +1,108 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "Scalability Basics",
+      "overview": "Understanding horizontal and vertical scaling, load balancing, and distributed systems fundamentals.",
+      "components": ["Load Balancing", "Horizontal Scaling", "Vertical Scaling", "Database Sharding"],
+      "architecture": "Distribute load across multiple servers using load balancers to handle increased traffic and data.",
+      "prosAndCons": {
+        "pros": ["Handle more concurrent users", "Better fault tolerance", "Improved performance"],
+        "cons": ["Increased complexity", "Consistency challenges", "Higher infrastructure cost"]
+      },
+      "realWorldExamples": "Netflix uses horizontal scaling with thousands of servers across regions. Facebook distributes load using consistent hashing.",
+      "interviewTips": "Discuss trade-offs between horizontal and vertical scaling. Mention capacity planning and auto-scaling strategies."
+    },
+    {
+      "id": 2,
+      "title": "Database Design",
+      "overview": "SQL vs NoSQL, sharding, replication, and consistency models for different use cases.",
+      "components": ["SQL Databases", "NoSQL Databases", "Data Sharding", "Replication"],
+      "architecture": "Choose database type based on data structure, consistency requirements, and scale needs.",
+      "prosAndCons": {
+        "pros": ["Data persistence", "ACID compliance (SQL)", "Horizontal scaling (NoSQL)"],
+        "cons": ["Join complexity", "Sharding overhead", "Consistency-availability tradeoffs"]
+      },
+      "realWorldExamples": "Amazon uses DynamoDB for NoSQL needs and RDS for relational data. Google uses BigTable for massive scale.",
+      "interviewTips": "Explain ACID vs BASE. Discuss when to use SQL vs NoSQL. Cover partitioning strategies and replication."
+    },
+    {
+      "id": 3,
+      "title": "Caching Strategies",
+      "overview": "Cache invalidation, LRU cache, distributed caching with Redis, and cache-aside patterns.",
+      "components": ["In-Memory Caching", "Distributed Cache", "Cache Invalidation", "TTL Management"],
+      "architecture": "Implement multi-level caching: application level, database query cache, HTTP cache, and CDN.",
+      "prosAndCons": {
+        "pros": ["Reduced latency", "Lower database load", "Improved throughput"],
+        "cons": ["Cache invalidation complexity", "Memory overhead", "Stale data issues"]
+      },
+      "realWorldExamples": "Instagram uses Redis for caching user feeds. Twitter uses memcached for timeline caching.",
+      "interviewTips": "Discuss cache invalidation strategies: TTL, event-based, write-through. Mention cache stampede and solutions."
+    },
+    {
+      "id": 4,
+      "title": "Message Queues",
+      "overview": "Understanding queues, pub-sub systems, and async processing for decoupled architecture.",
+      "components": ["Message Brokers", "Producers", "Consumers", "Topic Subscriptions"],
+      "architecture": "Decouple services using message queues for asynchronous communication and event-driven architecture.",
+      "prosAndCons": {
+        "pros": ["Decoupling", "Asynchronous processing", "Better fault tolerance"],
+        "cons": ["Eventual consistency", "Complexity", "Debugging challenges"]
+      },
+      "realWorldExamples": "Uber uses Kafka for event streaming. Amazon uses SQS for message queuing across services.",
+      "interviewTips": "Discuss ordering guarantees, exactly-once delivery, and failure handling. Mention dead letter queues."
+    },
+    {
+      "id": 5,
+      "title": "API Design",
+      "overview": "RESTful APIs, rate limiting, versioning, pagination, and API gateways.",
+      "components": ["REST Principles", "Rate Limiting", "API Versioning", "Pagination"],
+      "architecture": "Design stateless APIs with proper versioning, rate limiting, and caching headers.",
+      "prosAndCons": {
+        "pros": ["Scalable", "Cacheable", "Easy to understand"],
+        "cons": ["Over-fetching/under-fetching", "Versioning overhead", "Rate limiting complexity"]
+      },
+      "realWorldExamples": "GitHub API uses semantic versioning. Stripe implements comprehensive rate limiting and webhooks.",
+      "interviewTips": "Discuss pagination strategies (offset, cursor). Explain rate limiting algorithms (token bucket, sliding window)."
+    },
+    {
+      "id": 6,
+      "title": "Microservices",
+      "overview": "Service-oriented architecture, containerization with Docker, orchestration with Kubernetes.",
+      "components": ["Service Boundaries", "API Gateway", "Service Discovery", "Orchestration"],
+      "architecture": "Break monolith into small, independent services with clear responsibilities and communication protocols.",
+      "prosAndCons": {
+        "pros": ["Independent scaling", "Technology diversity", "Failure isolation"],
+        "cons": ["Network latency", "Distributed tracing complexity", "Data consistency issues"]
+      },
+      "realWorldExamples": "Netflix pioneered microservices. Amazon uses thousands of microservices. Airbnb uses service mesh.",
+      "interviewTips": "Discuss service discovery, circuit breakers, and distributed tracing. Mention Kubernetes orchestration benefits."
+    },
+    {
+      "id": 7,
+      "title": "Search Systems",
+      "overview": "Full-text search, inverted indexes, and search engine architecture.",
+      "components": ["Indexing", "Query Processing", "Ranking", "Inverted Indexes"],
+      "architecture": "Implement distributed search using Elasticsearch or similar, with indexing and query optimization.",
+      "prosAndCons": {
+        "pros": ["Fast text search", "Flexible queries", "Scalable"],
+        "cons": ["Index storage overhead", "Replication complexity", "Query latency"]
+      },
+      "realWorldExamples": "Airbnb uses Elasticsearch for search. Google uses proprietary search engine with distributed indexing.",
+      "interviewTips": "Discuss inverted indexes and ranking algorithms. Mention relevance scoring and faceted search."
+    },
+    {
+      "id": 8,
+      "title": "CDN and Content Delivery",
+      "overview": "Content delivery networks, edge servers, and geographic distribution.",
+      "components": ["Edge Servers", "Geographic Distribution", "Cache Strategy", "DDoS Protection"],
+      "architecture": "Distribute content across global edge locations to reduce latency and improve availability.",
+      "prosAndCons": {
+        "pros": ["Reduced latency", "Better user experience", "DDoS protection"],
+        "cons": ["Cache invalidation", "Geographic routing complexity", "Cost"]
+      },
+      "realWorldExamples": "Netflix uses CDN for video delivery. Cloudflare provides CDN and security. AWS CloudFront is widely used.",
+      "interviewTips": "Discuss geographic routing and cache invalidation. Mention purge strategies and versioning."
+    }
+  ]
+}
