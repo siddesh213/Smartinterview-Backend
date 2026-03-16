@@ -101,12 +101,8 @@ Server runs on: http://localhost:5000
 
 ------------------------------------------------------------------------
 
-# 📂 Project Structure
 
-Smartinterview-backend │ ├── controllers ├── models ├── routes ├──
-middleware ├── config ├── server.js ├── package.json └── .env
 
-------------------------------------------------------------------------
 
 # 🔐 Security
 
