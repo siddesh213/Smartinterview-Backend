@@ -24,7 +24,7 @@ persistent data storage.
 ### Database
 
 -   MongoDB
--   Mongoose ODM
+
 
 ### Authentication
 
